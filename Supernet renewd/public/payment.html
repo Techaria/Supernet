@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Supernet</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+    </nav>
+    <main>
+        <section id="payment-options">
+            <h2>Select a Payment Method</h2>
+            <div id="selected-package">
+                <h3>Selected Package: <span id="package-name"></span></h3>
+            </div>
+            <div class="payment-option">
+                <h3>Mpesa</h3>
+                <p>Pay securely using Mpesa</p>
+                <input type="text" id="mobile-number" placeholder="Enter Kenyan mobile number" pattern="[0-9]{10}" required>
+                <button onclick="payWithMpesa()">Pay with Mpesa</button>
+            </div>
+            <div class="payment-option">
+                <h3>PayPal</h3>
+                <p>Use PayPal for a fast and secure payment.</p>
+                <button>Pay with PayPal</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: support@internetservice.com</p>
+    </footer>
+    <script src="js/payment.js"></script>
+</body>
+</html>
